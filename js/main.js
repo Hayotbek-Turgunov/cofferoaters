@@ -13,3 +13,15 @@ if (elSiteHeaderToggler) {
     elSiteHeader.classList.toggle(modifiers.siteHeaderOpen);
   });
 }
+
+// FORM-GROUP
+var elsFormGroupToggler = document.querySelectorAll('.js-form-group-toggler');
+
+if (elsFormGroupToggler.length > 0) {
+  elsFormGroupToggler.forEach(function (toggler) {
+    toggler.addEventListener('click', function () {
+      toggler.closest('.form-group').classList.toggle(modifiers.formGroupOpen);
+    });
+  });
+}
+
